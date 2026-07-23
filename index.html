@@ -28,4 +28,73 @@
               name="dob"
               required
             >
+
+
             
+          <p class="error-message" id="errorMessage"></p>
+ 
+          <div class="button-row">
+            <button type="submit" class="btn btn-primary" id="calculateBtn">Calculate Age</button>
+            <button type="button" class="btn btn-secondary" id="resetBtn">Reset</button>
+          </div>
+        </form>
+      </section>
+ 
+      <!-- Empty state, shown before first calculation -->
+      <section class="empty-state" id="emptyState">
+        <p>Enter your date of birth above and click "Calculate Age" to see your results here.</p>
+      </section>
+ 
+      <!-- Results, hidden until calculated -->
+      <section class="results" id="resultsSection" hidden>
+        <h2 class="results-heading">Your Age</h2>
+ 
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-label">Years</span>
+            <span class="stat-value" id="yearsValue">0</span>
+          </div>
+ 
+          <div class="stat-card">
+            <span class="stat-label">Months</span>
+            <span class="stat-value" id="monthsValue">0</span>
+          </div>
+ 
+          <div class="stat-card">
+            <span class="stat-label">Days</span>
+            <span class="stat-value" id="daysValue">0</span>
+          </div>
+ 
+          <div class="stat-card">
+            <span class="stat-label">Total Months</span>
+            <span class="stat-value" id="totalMonthsValue">0</span>
+          </div>
+ 
+          <div class="stat-card">
+            <span class="stat-label">Total Weeks</span>
+            <span class="stat-value" id="totalWeeksValue">0</span>
+          </div>
+    <div class="stat-card">
+            <span class="stat-label">Total Days</span>
+            <span class="stat-value" id="totalDaysValue">0</span>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+ 
+    <footer class="site-footer">
+        <p>Simple age Calculator built with HTml, css AND JSSS</p>
+
+    </footer>
+
+  </div>
+
+      <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
