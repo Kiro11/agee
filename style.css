@@ -72,3 +72,48 @@ outline: 2px solid #263149;
 outline-offset: 1px;
 }
 
+
+.error-message {
+color: #460500;
+font-size: 0.85rem;
+min-height: 18px;
+margin-bottom: 4px;
+}
+
+
+.button-row {
+display: flex;
+gap: 12px;
+margin-top: 8px;
+}
+
+.btn {
+border: 1px solid transparent;
+border-radius: 4px;
+padding: 9px 18px;
+font-size:  0.95rem;
+font-weight: bold;
+cursor: pointer;
+}
+.btn:focus-visible {
+  outline: 2px solid #11266a;
+  outline-offset: 2px;
+}
+ 
+.btn-primary {
+  background-color: #0d2253;
+  color: #ffffff;
+}
+ 
+.btn-primary:hover {
+  background-color: #081745;
+}
+
+.btn-secondary {
+background-color: #ffffff;
+color: #333333;
+border-color: #081745;
+}
+.btn-secondary:hover {
+  background-color: #f0f0f0;
+}
