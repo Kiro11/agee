@@ -67,6 +67,52 @@ if (months < 0) {
     months += 12;
   }
 
+  const msPerDay = 1000 * 60 * 60 * 24;
+  const totalDays = Math.floor((today - birthDate) / msPerDay);
+  const totalWeeks = Math.floor(totalDays / 7);
+  const totalMonths = years * 12 + months;
+ 
+  return {
+    years: years,
+    months: months,
+    days: days,
+    totalMonths: totalMonths,
+    totalWeeks: totalWeeks,
+    totalDays: totalDays
+  };
+}
+ 
+function displayResults(ageDetails) {
+  yearsValue.textContent = ageDetails.years;
+  monthsValue.textContent = ageDetails.months;
+  daysValue.textContent = ageDetails.days;
+  totalMonthsValue.textContent = ageDetails.totalMonths;
+  totalWeeksValue.textContent = ageDetails.totalWeeks;
+  totalDaysValue.textContent = ageDetails.totalDays;
+ 
+  emptyState.hidden = true;
+  resultsSection.hidden = false;
+  resultsSection.classList.remove("results");
+  void resultsSection.offsetWidth; 
+  resultsSection.classList.add("results");
+}
+ 
+function showError(message) {
+  errorMessage.textContent = message;
+  dobInput.focus();
+}
+
+function clearError() {
+    errorMessage.textContent = "";
+}
+
+function resetForm() {
+ageForm.reset();
+clearError();
+resultsSection.hidden = true;
+emptyState.hidden = false;
+dobInput.focus();
+}
 
   
 
