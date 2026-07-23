@@ -17,3 +17,58 @@ margin: 0 auto;
 padding: 40px 20px 60px;
 }
 
+
+
+.site-header {
+text-align: center;
+margin-bottom: 32px;
+}
+
+.site-header h1 {
+font-size: 1.8rem;
+font-weight: bold;
+color: #1a1a1a;
+}
+
+.subtitle {
+margin-top: 8px;
+font-size: 0.95rem;
+color: #666666;
+}
+
+
+
+.card {
+background-color: #ffffff;
+border: 1px solid #d9d9d9;
+border-radius: 6px;
+padding: 22px 20px;
+}
+
+.form-group {
+display: flex;
+flex-direction: column;
+gap: 6px;
+margin-bottom: 12px;
+}
+
+.form-group label {
+font-size: 0.9rem;
+font-weight: 600;
+color: #333333;
+}
+
+.form-group input[type="date"] {
+padding: 8px 10px;
+border: 1px solid #bbbbbb;
+border-radius: 4px;
+font-size: 1rem;
+color: #222222;
+background-color: #ffffff;
+}
+
+.form-group input[type="data"]:focus {
+outline: 2px solid #263149;
+outline-offset: 1px;
+}
+
