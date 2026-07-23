@@ -117,3 +117,56 @@ border-color: #081745;
 .btn-secondary:hover {
   background-color: #f0f0f0;
 }
+
+
+
+.empty-state {
+text-align: center;
+padding: 30px 20px;
+color: #888888;
+font-size: 0.9rem;
+}
+.results {
+  margin-top: 24px;
+  animation: fadeIn 0.25s ease-in;
+}
+ 
+.results-heading {
+  font-size: 1.15rem;
+  margin-bottom: 14px;
+  color: #1a1a1a;
+}
+
+.stats-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+}
+
+.stat-card {
+background-color: #ffffff;
+border: 1px solid #dddddd;
+border-left: 3px solid #06266f;
+border-radius: 4px;
+padding: 12px 14px;
+text-align: left;
+} 
+
+.stat-label {
+display: block;
+margin-top: 2px;
+font-size: 1.35rem;
+font-weight: bold;
+color: #1a1a1a;
+}
+
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+to{
+    opacity: 1;
+}
+
+
+
